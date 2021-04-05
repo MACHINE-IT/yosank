@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Route, Switch } from "react-router-dom";
 import { Menu } from 'antd';
 import { Input } from 'antd';
 import LandingPage from '../../LandingPage/LandingPage';
@@ -13,10 +12,8 @@ const SearchMenu = (props) => {
         e.preventDefault();
         console.log(e.target.value);
         setSearchTerm(e.target.value);
-        //<LandingPage props.searchItem={(e.target.value)} />
+        
     }
-    console.log("searchTerm = " + searchTerm);
-
 
 
     return (
@@ -29,12 +26,8 @@ const SearchMenu = (props) => {
                 style={{ width: 400 }}
                 onChange={(e) => searchChangeHandler(e)}
             />
-            
 
-            {/*
-            console.log("Search Term = " + searchTerm);
-           <LandingPage search={searchTerm}/>
-            */}
+            
         </div>
     )
 }

@@ -79,6 +79,7 @@ function MovieDetailPage(props) {
                     image={`${IMAGE_BASE_URL}${IMAGE_SIZE}${Movie.backdrop_path}`}
                     title={Movie.original_title}
                     text={Movie.overview}
+                    MovieId = {Movie.id}
                 />
                 :
                 <div>loading...</div>

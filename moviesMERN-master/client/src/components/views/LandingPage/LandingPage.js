@@ -4,6 +4,7 @@ import { API_URL, API_KEY, IMAGE_BASE_URL, IMAGE_SIZE, POSTER_SIZE } from '../..
 import MainImage from './Sections/MainImage'
 import GridCard from '../../commons/GridCards'
 import SearchMenu from '../NavBar/Sections/SearchMenu'
+import MovieDetailPage from '../MovieDetail/MovieDetail';
 const { Title } = Typography;
 
 
@@ -67,7 +68,6 @@ function LandingPage(props) {
     }
 
 
-
     return (
         <div style={{ width: '100%', margin: '0' }}>
             {MainMovieImage &&
@@ -75,6 +75,7 @@ function LandingPage(props) {
                     image={`${IMAGE_BASE_URL}${IMAGE_SIZE}${MainMovieImage.backdrop_path}`}
                     title={MainMovieImage.original_title}
                     text={MainMovieImage.overview}
+                    MovieId = {MainMovieImage.id}
                 />
 
             }
