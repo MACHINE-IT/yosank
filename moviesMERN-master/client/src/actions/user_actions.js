@@ -4,8 +4,11 @@ import {
     REGISTER_USER,
     AUTH_USER,
     LOGOUT_USER,
+    TYPING_SEARCH_BAR,
+    INITIAL_RESULT
 } from './types';
-import { USER_SERVER } from '../components/Config.js';
+import { API_KEY, API_URL, USER_SERVER } from '../components/Config.js';
+
 
 export function registerUser(dataToSubmit) {
     const request = axios.post(`${USER_SERVER}/register`, dataToSubmit)
@@ -44,5 +47,39 @@ export function logoutUser() {
     return {
         type: LOGOUT_USER,
         payload: request
+    }
+}
+
+export function addSearchResult(searchTerm){
+    const path = `${API_URL}search/movie?api_key=${API_KEY}&language=en-US&query=${searchTerm}&page=1`;  
+    /* const request = axios.get(`${path}`)
+    .then(response => {
+        console.log(response.data.results);
+        return response.data.results}) */
+
+     /*    const request = fetch(`${path}`)
+        .then(response => response.json())
+        .then(data =>data.results) */
+
+        const request = path
+
+    return {
+        type: "ADD_SEARCH_RESULT",
+        payload: request
+    }
+}
+export function typing(status){
+    return{
+        type: TYPING_SEARCH_BAR,
+        payload: { 
+            loading:status
+        }     
+    }
+}
+
+export function showInitialResult(){
+    return{
+        type: INITIAL_RESULT,
+        payload: "initial_result"
     }
 }

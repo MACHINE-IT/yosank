@@ -3,7 +3,7 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
-		"antd": "3.24.1",
+		"antd": "^3.24.1",
 		"axios": "0.19.2",
 		"core-js": "3.6.4",
 		"formik": "1.5.8",
@@ -20,6 +20,7 @@
 		"redux-promise": "0.6.0",
 		"redux-thunk": "2.3.0",
 		"socket.io-client": "2.2.0",
+		"youtube-react": "0.0.1",
 		"yup": "0.27.0"
 	},
 	"scripts": {
@@ -44,6 +45,7 @@
 		]
 	},
 	"devDependencies": {
+		"@ant-design/icons": "^4.6.2",
 		"http-proxy-middleware": "1.0.3"
 	}
 }
