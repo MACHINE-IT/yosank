@@ -227,7 +227,7 @@ console.log(searchbackrop_path);
                         image={`${IMAGE_BASE_URL}${IMAGE_SIZE}${searchbackrop_path.imagePath}`}
                         title={searchbackrop_path.orginal_title}
                         text={searchbackrop_path.overview}
-                        MovieId = {searchbackrop_path.id}
+                        MovieId = {searchbackrop_path.movieId}
                      />
 
                 
