@@ -1,0 +1,7 @@
+.toggle_actor_view_btn:hover {
+    -webkit-transform: translateY(-1px);
+	transform: translateY(-1px);
+    transition-delay: 3ms;
+    transition-duration: 3ms;
+}
+

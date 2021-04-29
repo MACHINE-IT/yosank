@@ -1,0 +1,332 @@
+@import '~antd/dist/antd.css';
+
+.menu {
+	padding: 0 20px;
+	border-bottom: solid 1px #e8e8e8;
+	overflow: auto;
+	box-shadow: 0 0 30px #f3f1f1;
+	background-color: white;
+
+}
+
+.menu__container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.menu__logo {
+	width: 150px;
+	float: left;	
+}
+
+.menu__logo:hover {
+
+}
+
+.menu__logo a:hover {
+}
+.menu__logo a {
+	color: #BD0A28;
+	display: inline-block;
+	font-size: 20px;
+	padding: 19px 20px;
+}
+
+
+
+.menu__container .ant-menu-item {
+	padding: 0px 5px;
+}
+
+.menu__container .ant-menu-submenu-title {
+	padding: 10px 20px;
+}
+
+.menu__container .ant-menu-item a,
+.menu__container .ant-menu-submenu-title a {
+	padding: 10px 15px;
+}
+
+.menu__container .ant-menu-horizontal {
+	border-bottom: none;
+}
+
+.menu__container .menu_left {
+	float: left;
+	
+}
+
+
+.menu__container .menu_search {
+	padding: 18px 15px;
+}
+
+.menu__container .menu_rigth {
+	float: right;
+}
+
+.signIn:hover {
+	text-decoration: 'none'; 
+}
+
+.logOut:hover {
+	text-decoration: 'none'; 
+}
+
+.menu__mobile-button {
+	float: right;
+	height: 32px;
+	padding: 6px; 
+	margin-top: 8px;
+	display: none !important; /* use of important to overwrite ant-btn */
+	background: #bd0a28; 
+	border-color: #bd0a28;
+}
+
+.menu_drawer .ant-drawer-body {
+	padding: 0 !important;
+}
+
+/* align header of Drawer with header of page */
+.menu_drawer .ant-drawer-header {
+	padding: 14px 24px !important;
+}
+
+@media (max-width: 887px) {
+	.menu__mobile-button {
+		display: inline-block !important;
+		margin-top: 18px;
+	}
+	
+	.menu_rigth {
+		display: none;
+	}
+	
+	.menu_drawer .ant-drawer-header{
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	
+	.menu_drawer .ant-drawer-header{
+		display: none;
+	}
+	
+	.menu__mobile-button {
+		margin-top: 8px;
+		display: inline-block !important;
+	}
+
+	.menu_left,
+	.menu_rigth
+	 {
+		display: none;
+	}
+	.menu_search {
+		margin-top: -10px;
+	}
+
+	.menu__logo a {
+		margin-left: -20px;
+	}
+
+	.menu__container .ant-menu-item,
+	.menu__container .ant-menu-submenu-title {
+		padding: 1px 20px;
+	}
+
+	.menu__logo a {
+		padding: 10px 20px;
+	}
+}
+
+.foiRed {
+	color: #bd0a28;
+}
+.foiRed:hover {
+	color: #bd0a28;
+}
+
+.search_results{
+	position:fixed;
+
+    width: 400px;
+}
+
+@media (max-width: 649px) {
+	.menu_search {
+		width: 200px;
+		margin-right: 50%;
+	}	
+	.menu_drawer .ant-drawer-header{
+		display: none;
+	}
+}
+@media (max-width: 646px) {
+	.menu_search {
+		width: 150px;
+		margin-right: 60%;
+	}	
+	.menu_drawer .ant-drawer-header{
+		display: none;
+	}
+}
+
+@media (max-width: 641px) {
+	.menu_drawer .ant-drawer-header{
+		display: inline-block;
+	}
+	.menu_drawer .ant-drawer-title{
+		display:inline-block;
+		color: #bd0a28;
+	}
+	.menu__logo {
+		display: none;
+	}
+}
+
+@media (max-width: 500) {
+	.menu_search {
+		margin-left: auto;
+	}
+	.menu__mobile-button {
+		display:block;
+		align-items: center;
+	}
+}
+@media (max-width: 487px) {
+	.menu_search {
+		margin-right: 25%;
+	}
+	.menu__mobile-button {
+		display:block;
+		align-items: center;
+	}
+	.ant-input-affix-wrapper .ant-input {
+		position: relative;
+		text-align: inherit; 
+		width: 75%;
+		right: 2rem;
+	}
+}
+
+
+/*  @import '~antd/dist/antd.css';
+
+.menu {
+	padding: 0 20px;
+	border-bottom: solid 1px #e8e8e8;
+	overflow: auto;
+	box-shadow: 0 0 30px #f3f1f1;
+	background-color: white;
+
+	
+	
+	
+}
+
+.menu__container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.menu__logo {
+	width: 150px;
+	float: left;
+}
+
+.menu__logo a {
+	display: inline-block;
+	font-size: 20px;
+	padding: 19px 20px;
+}
+
+.menu__container .ant-menu-item {
+	padding: 0px 5px;
+}
+
+.menu__container .ant-menu-submenu-title {
+	padding: 10px 20px;
+}
+
+.menu__container .ant-menu-item a,
+.menu__container .ant-menu-submenu-title a {
+	padding: 10px 15px;
+}
+
+.menu__container .ant-menu-horizontal {
+	border-bottom: none;
+}
+
+.menu__container .menu_left {
+	float: left;
+}
+
+
+.menu__container .menu_search {
+	padding: 18px 15px;
+}
+
+.menu__container .menu_rigth {
+	float: right;
+}
+
+.menu__mobile-button {
+	float: right;
+	height: 32px;
+	padding: 6px;
+	margin-top: 8px;
+	display: none !important; 
+	background: #bd0a28; 
+	border-color: #bd0a28;
+}
+
+.menu_drawer .ant-drawer-body {
+	padding: 0 !important;
+}
+
+.menu_drawer .ant-drawer-header {
+	padding: 14px 24px !important;
+}
+
+@media (max-width: 767px) {
+	.menu__mobile-button {
+		display: inline-block !important;
+	}
+
+	.menu_left,
+	.menu_rigth,
+	.menu_search {
+		display: none;
+	}
+	
+
+	.menu__logo a {
+		margin-left: -20px;
+	}
+
+	.menu__container .ant-menu-item,
+	.menu__container .ant-menu-submenu-title {
+		padding: 1px 20px;
+	}
+
+	.menu__logo a {
+		padding: 10px 20px;
+	}
+}
+
+.foiRed {
+	color: #bd0a28;
+}
+.foiRed:hover {
+	color: #bd0a28;
+}
+
+.search_results{
+	position:fixed;
+
+    width: 400px;
+}  */

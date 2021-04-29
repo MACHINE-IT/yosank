@@ -1,0 +1,33 @@
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td,
+th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+.text-center {
+	text-align: 'center';
+}
+
+.remove_button {
+	background-color: #bd0a28;
+	color: ivory;
+	border-style: none;
+	border-radius: 2px;
+}
+.remove_button:hover {
+	background-color: #790a1c;
+	color:white;
+	-webkit-transform: translateY(-1px);
+	transform: translateY(-1px);
+}
